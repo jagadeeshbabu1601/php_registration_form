@@ -15,7 +15,7 @@ $result = mysqli_query($conn, $sql);
 
 $n = mysqli_num_rows($result);
 
-echo $n;
+echo "{$n} records found in the table";
 echo "<br>";
 
 while($row = mysqli_fetch_array($result)){
